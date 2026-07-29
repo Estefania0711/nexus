@@ -1,32 +1,30 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import Button from "@/components/ui/Button";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6">
+    <>
+      <Navbar />
 
-      <h1 className="text-6xl font-bold text-red-600">
-        NEXUS
-      </h1>
+      <main className="min-h-[calc(100vh-160px)] bg-black text-white flex flex-col items-center justify-center px-6">
 
-      <p className="mt-6 max-w-2xl text-center text-xl text-gray-300">
-        Conecta equipos, organiza proyectos y lleva el control
-        de todo tu trabajo desde una única plataforma.
-      </p>
+        <h1 className="text-7xl font-bold text-red-600">
+          NEXUS
+        </h1>
 
-      <button
-        className="
-          mt-10
-          bg-red-600
-          hover:bg-red-700
-          transition
-          px-8
-          py-3
-          rounded-xl
-          text-lg
-          font-semibold
-        "
-      >
-        Comenzar
-      </button>
+        <p className="mt-6 max-w-3xl text-center text-xl text-gray-300 leading-8">
+          La plataforma inteligente para gestionar proyectos,
+          equipos y colaboración desde un único lugar.
+        </p>
 
-    </main>
+        <div className="mt-10">
+          <Button text="Comenzar" />
+        </div>
+
+      </main>
+
+      <Footer />
+    </>
   );
 }
