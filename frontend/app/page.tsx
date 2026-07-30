@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 
 export default function Home() {
   return (
@@ -19,7 +19,9 @@ export default function Home() {
         </p>
 
         <div className="mt-10">
-          <Button text="Comenzar" />
+          <Button>
+            Comenzar
+          </Button>
         </div>
 
       </main>
